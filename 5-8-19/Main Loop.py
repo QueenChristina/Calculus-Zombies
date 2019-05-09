@@ -63,7 +63,13 @@ while RUNNING == True:
     elif Var.you_died == True:
         Thing.you_died()
 
-        event_loop()        
+        event_loop()
+        
+    elif Var.calculator == True:
+        Thing.calculator()
+
+        event_loop()
+        
     elif Var.menu == True:
         Thing.do_menu()
         #BEWARE! Pygame will "not respond" and crash if no event loop is taking place (assumption by OS). Use below if you want no event to be registered
