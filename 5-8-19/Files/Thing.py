@@ -233,6 +233,10 @@ learn_sign = pygame.image.load(os.path.join('Stuff', 'Learn.png'))
 learn_sign = pygame.transform.scale2x(learn_sign)
 learn_sign_rect = learn_sign.get_rect()
 
+calc_sign = pygame.image.load(os.path.join('Stuff', 'Calculator.png'))
+calc_sign = pygame.transform.scale2x(calc_sign)
+calc_sign_rect = calc_sign.get_rect()
+
 def do_menu():
     global title
     if Var.set_up_menu == True:
@@ -280,11 +284,14 @@ def do_menu():
     Sprite.DISPLAY.blit(title, (20 , int(40 + titley)))
     Sprite.DISPLAY.blit(hand, (0,0))
 
-    Sprite.DISPLAY.blit(class_sign, (600,500))
-    class_sign_rect.topleft = (600,500)
+    Sprite.DISPLAY.blit(class_sign, (650,400))
+    class_sign_rect.topleft = (650,400)
     
-    Sprite.DISPLAY.blit(learn_sign, (50,500))
-    learn_sign_rect.topleft = (50,500)
+    Sprite.DISPLAY.blit(learn_sign, (10,400))
+    learn_sign_rect.topleft = (10,400)
+
+    Sprite.DISPLAY.blit(calc_sign, (10,550))
+    calc_sign_rect.topleft = (10,550)
 
     time_elapsed += 1
     if time_elapsed > wait_time:        
@@ -296,4 +303,48 @@ def do_menu():
                 Var.menu = False
             elif learn_sign_rect.collidepoint(Var.mouseDOWNPOS):
                 pass
+            elif calc_sign_rect.collidepoint(Var.mouseDOWNPOS):
+                Var.set_up_calculator = True
+                Var.calculator = True
+                Var.menu = False
+
+Input2 =  InputText.TextInput(
+            initial_string=" ",
+            font_family="Calibri",
+            font_size= 20,
+            antialias = True,
+            text_color= (0, 0, 0),
+            cursor_color= (0, 0, 0),
+            repeat_keys_initial_ms=400,
+            repeat_keys_interval_ms=35)
+screen = pygame.image.load(os.path.join('Stuff', 'TI 83 Screen.png'))
+screen = pygame.transform.scale2x(screen)
+def calc_screen():
+    Sprite.DISPLAY.blit(screen, (300,30))
+    text = "Question"
+    show_text(text, (500, 140), 20, (0, 0, 0))
+
+calc = pygame.image.load(os.path.join('Stuff', 'TI 83.png'))
+calc = pygame.transform.scale2x(calc)
+calc_rect = calc.get_rect()
+def calculator():
+    if Var.set_up_calculator == True:
+        global calcy
+        calcy = 300
+        Var.set_up_calculator = False
+    Sprite.DISPLAY.blit(menu, (0,0))
+
+    Sprite.DISPLAY.blit(calc, (300,calcy))
+
+    if calcy <= 30:
+        calcy = 30
+        calc_screen()
+        #Sprite.DISPLAY.blit(text_box, (0, int(4*Sprite.DISPLAY_Y/5)))
+        events = pygame.event.get()        
+        Input2.update(events)
+        Sprite.DISPLAY.blit(Input2.get_surface(), (450, 310))
+
+        Calculus.calc_question()
+    else:
+        calcy -= 5
         
