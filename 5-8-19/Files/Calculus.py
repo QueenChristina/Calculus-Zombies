@@ -112,5 +112,36 @@ def show_question():
     if questiontype == integrals:
         font = pygame.font.SysFont("calibri", 30)
         textsurface2 = font.render('+ C', False, WHITE)
-        Sprite.DISPLAY.blit(textsurface2, (500, 680)) 
+        Sprite.DISPLAY.blit(textsurface2, (500, 680))
 
+
+##########################################################################################################################################################
+# Calculator
+text1 = ''
+text2 = ''
+expression = ''
+def calc_question():
+    global text1, text2, expression
+    text = "Input expression:"
+  
+    if Var.keyENTER:
+        Var.Answer = Thing.Input2.get_text()
+        try:
+            #global text1, text2
+            expr = Var.Answer
+            expr = sympify(expr)
+            deriv = diff(expr, x)
+            text1 = "Derivative: " + str(deriv)
+            integ = integrate(expr, x)
+            text2 = "Integral: " + str(integ)
+            Var.keyENTER = False
+            Thing.Input2.clear_text()
+            expression = "Expression: " + str(Var.Answer)
+        except:
+            text1 = "Sorry, input typed wrong"     
+
+    Thing.show_text(text, (430, 260), 20, (0, 0, 0))
+    
+    Thing.show_text(expression, (370, 180), 20, (0, 0, 0))
+    Thing.show_text(text1, (370, 200), 20, (0, 0, 0))
+    Thing.show_text(text2, (370, 220), 20, (0, 0, 0))
