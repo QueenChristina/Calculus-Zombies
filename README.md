@@ -8,7 +8,7 @@ Memorize derivatives and integrals quickly through this game of survival against
 
 ![Progress 5-13-19 Lesson](https://github.com/QueenChristina/Calculus-Zombies/blob/master/5-13-19/5-13-19%20Class.gif)
 
-![Progress 5-8-19 Calculator](https://github.com/QueenChristina/Calculus-Zombies/blob/master/5-8-19/5-9-19.gif)
+![Progress 5-13-19 Calculator](https://github.com/QueenChristina/Calculus-Zombies/blob/master/5-13-19/5-13-19%20Calc.gif)
 
 <br><br><br><br>
 
