@@ -18,7 +18,11 @@ https://github.com/sympy/sympy/wiki/release-notes-for-1.4 <br>
 <br>
 It's best to install pygame and sympy modules via your command prompt.
 <br>
-If pip is not recognized, use https://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command for help OR try py -m pip install -U symp. <br>
+If pip is not recognized, make sure pip has been downloaded: https://pip.pypa.io/en/stable/installing/ or https://phoenixnap.com/kb/install-pip-windows but it should be included automatically if you have python version 3.4 or up. It can be updated via: python -m pip install -U pip OR py -m pip install -U pip on windows.
+<br> Please note, you may have python downloaded under python OR py. <br>
+Use https://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command for help.
+For me, these worked: <br> py -m pip install -U sympy <br>
+py -m pip install -U pygame  <br>
 
 ![Progress 5-13-19 Title Screen](https://github.com/QueenChristina/Calculus-Zombies/blob/master/5-13-19/5-13-19%20Pretty.gif)
 
