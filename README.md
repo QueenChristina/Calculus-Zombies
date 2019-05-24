@@ -23,6 +23,7 @@ If pip is not recognized, make sure pip has been downloaded: https://pip.pypa.io
 Use https://stackoverflow.com/questions/23708898/pip-is-not-recognized-as-an-internal-or-external-command for help.
 For me, these worked: <br> py -m pip install -U sympy <br>
 py -m pip install -U pygame  <br>
+<br> and to test if this works: py -m pygame.examples.aliens <br>
 
 ![Progress 5-13-19 Title Screen](https://github.com/QueenChristina/Calculus-Zombies/blob/master/5-13-19/5-13-19%20Pretty.gif)
 
