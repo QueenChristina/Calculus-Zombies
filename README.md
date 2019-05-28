@@ -1,10 +1,10 @@
 # Calculus-Zombies
 Memorize derivatives and integrals quickly through this game of survival against zombies!
-<br> Work in progress!
-<br> Follow this project to keep updated. Will add visuals and fun soon. ;)
+<br> Light review of calculus and motivation included! ;)
 
 # Download
 Download here: https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
+Or download the folder "Calculus Zombie".
 
 <br> 
 # Notes
