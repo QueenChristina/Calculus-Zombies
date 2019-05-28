@@ -6,14 +6,13 @@ Memorize derivatives and integrals quickly through this game of survival against
 Download here: https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
 Or download the folder "Calculus Zombie".
 
-<br> 
 # Notes
-<br>
 I need help figuring out how to convert my game into a .exe. So far I figured out how to edit the .spec and then turn into .exe file using https://stackoverflow.com/questions/38977929/pyinstaller-creating-exe-runtimeerror-maximum-recursion-depth-exceeded-while-ca . But when run, it was missing python36.dll so I downloaded from https://wikidll.com/python-software-foundation/python36-dll and unzipped it in the same file location (I'm using Python 3.6, 32 bit, on Windows). It worked better, but now says missing "encodings" module. I believe problem now is something to do with Python PATH and HOME environment variables, but I am not allowed to change these on the current computer without being an "advanced user" or "administrator". Basically, I risk ruining the whole computer due to my lack of experience. So now I'm trying this on another laptop (which my parents say are okay to mess up on) but it's even worse; it has Python 3.7 installed. More errors. I'm trying my best to figure this out...
 Currently using for help: https://stackoverflow.com/questions/38132755/importerror-no-module-named-encodings
 Alternative to editing environment variables is just copying and pasting the whole python lib into CalcZom game folder, but it looks messy and is not effifcient. Managed to get rid of "No module names 'x'" error, but now throws a different error. Worse, doing this confuses my game's python files location and causes it to crash.
 <br>
 <br> <br>
+
 # INSTRUCTIONS
 My current game so far: https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
 <br> Feel free to download. <br>
