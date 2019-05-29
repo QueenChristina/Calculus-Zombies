@@ -1,6 +1,11 @@
 # Calculus-Zombies
 Memorize derivatives and integrals quickly through this game of survival against zombies!
 <br> Light review of calculus and motivation included! ;)
+Watch the demo here: https://youtu.be/Qs85VhzvFdc
+(No sound in game because I don't know how to make game sounds).
+All visuals and code except for "InputText.py" is made by me.
+"InputText.py" is Copyright 2017, by Silas Gyger, silasgyger@gmail.com, All rights reserved.
+Borrowed from https://github.com/Nearoo/pygame-text-input under the MIT license.
 
 # Download
 Download here: https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
