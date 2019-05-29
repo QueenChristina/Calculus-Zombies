@@ -14,7 +14,7 @@ Alternative to editing environment variables is just copying and pasting the who
 <br> <br>
 
 # INSTRUCTIONS
-My current game so far: https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
+My current game (as of 5-28-19): https://drive.google.com/drive/folders/10hjFlAXVXCrB8waCYXZwyMx4AA_lFjn7?usp=sharing
 <br> Feel free to download. <br>
 It will work if you have Python 3, pygame, sympy installed. You can download these by following instructions as follows:
 https://www.python.org/downloads/ <br>
